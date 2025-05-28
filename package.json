@@ -1,0 +1,62 @@
+{
+  "name": "thunderdev-fullstack",
+  "version": "0.10.0-beta",
+  "description": "ThunderDev - AI-Powered Website Builder with Google Gemini Integration",
+  "private": true,
+  "workspaces": [
+    "thunder/frontend",
+    "thunder/be"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm install --prefix thunder/frontend && npm install --prefix thunder/be",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd thunder/frontend && npm run dev",
+    "dev:backend": "cd thunder/be && npm run dev",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:frontend": "cd thunder/frontend && npm run build",
+    "build:backend": "cd thunder/be && tsc -b",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:frontend": "cd thunder/frontend && npm run preview",
+    "start:backend": "cd thunder/be && node dist/index.js",
+    "setup": "npm run install:all && npm run setup:env",
+    "setup:env": "echo 'Please copy thunder/be/.env.example to thunder/be/.env and add your Google API key'",
+    "clean": "rm -rf thunder/frontend/dist thunder/be/dist thunder/frontend/node_modules thunder/be/node_modules node_modules"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "website-builder",
+    "ai-powered",
+    "react",
+    "nodejs",
+    "typescript",
+    "google-gemini",
+    "drag-and-drop",
+    "code-generation",
+    "webdev",
+    "vite"
+  ],
+  "authors": [
+    {
+      "name": "Aditya",
+      "url": "https://github.com/Xenonesis"
+    },
+    {
+      "name": "Muneer Ali",
+      "url": "https://github.com/Muneerali199"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xenonesis/Webdev.AI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Xenonesis/Webdev.AI/issues"
+  },
+  "homepage": "https://github.com/Xenonesis/Webdev.AI#readme",
+  "license": "MIT"
+}
