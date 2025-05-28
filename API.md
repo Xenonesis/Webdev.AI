@@ -520,7 +520,7 @@ GET /api/analytics/usage
 
 ---
 
-**API Version**: 0.10.0-beta
+**API Version**: 0.15.0
 **Last Updated**: May 28, 2025
 **Repository**: [https://github.com/Xenonesis/Webdev.AI](https://github.com/Xenonesis/Webdev.AI)
 **License**: MIT

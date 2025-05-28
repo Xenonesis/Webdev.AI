@@ -1,6 +1,6 @@
 {
   "name": "thunderdev-fullstack",
-  "version": "0.10.0-beta",
+  "version": "0.15.0",
   "description": "ThunderDev - AI-Powered Website Builder with Google Gemini Integration",
   "private": true,
   "workspaces": [

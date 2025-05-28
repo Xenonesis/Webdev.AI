@@ -2,7 +2,7 @@
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Live Demo](https://img.shields.io/website?down_color=red&down_message=Offline&label=Demo&up_color=blue&up_message=Live&url=https%3A%2F%2Fwebdev-ai.vercel.app)](https://webdev-ai.vercel.app)
-![Version](https://img.shields.io/badge/version-0.10(beta)-blue)
+![Version](https://img.shields.io/badge/version-0.15.0-blue)
 ![Release Date](https://img.shields.io/badge/release-28%20May%202025-brightgreen)
 ![Maintained](https://img.shields.io/badge/Maintained%3F-Yes-brightgreen.svg)
 ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-orange)
@@ -275,7 +275,7 @@ Crafted with ❤️ by:
 
 ## 📋 Project Information
 
-- **Version**: 0.10 (Beta)
+- **Version**: 0.15.0
 - **Release Date**: 28 May 2025
 - **License**: MIT
 - **Repository**: [https://github.com/Xenonesis/Webdev.AI](https://github.com/Xenonesis/Webdev.AI)

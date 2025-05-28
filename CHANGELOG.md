@@ -8,10 +8,57 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### 🔄 In Development
-- Enhanced AI model integration with Gemini 2.0 Flash
-- Advanced template customization options
 - Real-time collaboration features
-- Performance optimizations
+- Advanced AI model selection
+- Enhanced template marketplace
+- Performance monitoring dashboard
+
+---
+
+## [0.15.0] - 2025-05-28
+
+### 🎉 Stable Release
+
+This is the first stable release of ThunderDev, featuring comprehensive deployment fixes and enhanced documentation.
+
+### ✨ Added
+- **📚 Complete Documentation Suite**
+  - Comprehensive CONTRIBUTING.md with detailed guidelines
+  - Professional CODE_OF_CONDUCT.md for community standards
+  - Detailed SECURITY.md with vulnerability reporting procedures
+  - Complete API.md documentation with examples and SDKs
+  - DEPLOYMENT.md guide for multiple platforms
+
+### 🔧 Fixed
+- **🚀 Netlify Deployment Issues**
+  - Resolved `@rollup/rollup-linux-x64-gnu` module not found error
+  - Added proper netlify.toml configuration
+  - Fixed npm workspace build process
+  - Added .npmrc files for optional dependency installation
+  - Optimized Vite configuration for production builds
+
+### 🛠️ Improved
+- **📦 Build Process**
+  - Enhanced package.json scripts for better deployment
+  - Added proper Node.js version constraints
+  - Optimized dependency management
+  - Improved build performance and reliability
+
+### 🌐 Deployment
+- **✅ Multi-Platform Support**
+  - Netlify deployment ready with auto-configuration
+  - Vercel deployment support
+  - Docker containerization examples
+  - GitHub Pages deployment workflow
+  - Railway and Render platform support
+
+### 📋 Documentation
+- **🎯 Professional Standards**
+  - Industry-standard markdown documentation
+  - Comprehensive API reference
+  - Security policy and guidelines
+  - Contribution workflows and standards
+  - Deployment guides for all major platforms
 
 ---
 
