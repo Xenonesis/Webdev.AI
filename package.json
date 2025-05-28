@@ -12,15 +12,17 @@
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:frontend": "cd thunder/frontend && npm run dev",
     "dev:backend": "cd thunder/be && npm run dev",
-    "build": "npm run build:backend && npm run build:frontend",
-    "build:frontend": "cd thunder/frontend && npm run build",
+    "build": "npm run build:frontend",
+    "build:frontend": "cd thunder/frontend && npm ci --include=optional && npm run build",
     "build:backend": "cd thunder/be && tsc -b",
+    "build:full": "npm run build:backend && npm run build:frontend",
     "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
     "start:frontend": "cd thunder/frontend && npm run preview",
     "start:backend": "cd thunder/be && node dist/index.js",
     "setup": "npm run install:all && npm run setup:env",
     "setup:env": "echo 'Please copy thunder/be/.env.example to thunder/be/.env and add your Google API key'",
-    "clean": "rm -rf thunder/frontend/dist thunder/be/dist thunder/frontend/node_modules thunder/be/node_modules node_modules"
+    "clean": "rm -rf thunder/frontend/dist thunder/be/dist thunder/frontend/node_modules thunder/be/node_modules node_modules",
+    "postinstall": "cd thunder/frontend && npm install --include=optional"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
