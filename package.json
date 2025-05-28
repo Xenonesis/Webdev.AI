@@ -13,7 +13,7 @@
     "dev:frontend": "cd thunder/frontend && npm run dev",
     "dev:backend": "cd thunder/be && npm run dev",
     "build": "npm run build:frontend",
-    "build:frontend": "cd thunder/frontend && npm ci --include=optional && npm run build",
+    "build:frontend": "cd thunder/frontend && npm install --include=optional && npm run build",
     "build:backend": "cd thunder/be && tsc -b",
     "build:full": "npm run build:backend && npm run build:frontend",
     "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",

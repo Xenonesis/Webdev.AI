@@ -1,0 +1,26 @@
+# Alternative Netlify configuration - use if main netlify.toml fails
+[build]
+  command = "npm install && cd thunder/frontend && npm install --include=optional && npm run build"
+  publish = "thunder/frontend/dist"
+  
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_CONFIG_INCLUDE = "optional"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Alternative build commands to try:
+# Option 1: Simple build
+# command = "cd thunder/frontend && npm run build"
+
+# Option 2: With workspace
+# command = "npm --workspace thunderdev run build"
+
+# Option 3: Direct vite build
+# command = "cd thunder/frontend && npx vite build"
+
+# Option 4: Force install then build
+# command = "npm install && npm run build:frontend"
